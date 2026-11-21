@@ -1,0 +1,7 @@
+# Maven build output
+target/
+
+# Editor settings
+.idea/
+*.iml
+.vscode/
