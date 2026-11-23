@@ -5,3 +5,7 @@ target/
 .idea/
 *.iml
 .vscode/
+
+# Local secrets and config overrides (never commit)
+.env
+application-local.yml

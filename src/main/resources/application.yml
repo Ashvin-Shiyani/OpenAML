@@ -1,6 +1,13 @@
 spring:
   application:
     name: openaml
+  datasource:
+    url: ${OPENAML_DB_URL:jdbc:postgresql://localhost:5433/openaml}
+    username: ${OPENAML_DB_USER:openaml}
+    password: ${OPENAML_DB_PASSWORD:openaml}
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
 
 server:
   port: ${PORT:8080}
